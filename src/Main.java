@@ -27,5 +27,22 @@ public class Main {
             throw new RuntimeException(e);
         }
 
+        //class FileReader
+
+        try {
+            FileReader reader = new FileReader("file.txt");
+            int data = reader.read();
+
+            while (data != -1) {
+                System.out.print((char)data);
+                data = reader.read();
+            }
+            reader.close();
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
