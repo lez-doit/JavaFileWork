@@ -1,0 +1,5 @@
+Roses are red 
+Violets are blue 
+Some text here 
+Last line of file
+(A poem for testing)
